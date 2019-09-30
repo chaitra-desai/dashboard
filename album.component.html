@@ -1,0 +1,9 @@
+<body>
+<h1>Albums &nbsp;&nbsp;&nbsp;</h1>
+<button (click)="album1()">Albums</button><button [routerLink]="['/dashboard']">Back to DashBoard</button>
+<div *ngFor='let b of data'>
+    <p>{{b.title}}</p>
+    <img src ="{{b.url}}">
+   
+</div> 
+</body>

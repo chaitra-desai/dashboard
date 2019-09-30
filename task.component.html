@@ -1,0 +1,11 @@
+<body>
+<h1>Tasks &nbsp;&nbsp;&nbsp;<button [routerLink]="['/dashboard']">Back to DashBoard</button></h1>
+<table border="1px"> <tr *ngFor='let e of task'>
+    
+    <td>{{e.userId}}</td>
+    <td>{{e.id}}</td>
+    <td>{{e.title}}</td>
+    <td>{{e.completed}}</td>
+    </tr>
+</table>
+</body>

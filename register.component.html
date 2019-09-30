@@ -1,0 +1,11 @@
+<body>
+<h1>Register</h1>
+<form [formGroup]="login">
+    email:
+    <input type="email" formControlName="emailid"><br><br>
+    password:
+    <input type="password" formControlName="pass"><br><br>
+    <button (click)="reg(login.value)">submit</button>
+    <button [routerLink]="['/dashboard']">DashBoard</button>
+</form>
+</body>
